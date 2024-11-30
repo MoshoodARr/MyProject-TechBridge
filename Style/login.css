@@ -1,0 +1,88 @@
+body{
+    background: rgb(154, 196, 236);
+}
+
+.body-container{
+    background: rgb(230, 238, 246);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: -100px; */
+    margin: ;
+
+}
+
+.facebook-container{
+    /* padding: 70px; */
+    margin-left: 60px;
+    margin-bottom: 70px;   
+    width:px; 
+
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    height: 200px;
+    width: 230px;
+    border-color: 20px solid rgb(50 58 58);
+    border-radius: 10px;
+    /* box-shadow: 0, 0, 10px grey; */
+    box-sizing: border-box;
+    /*display: grid;
+    grid-template-columns: 10px; */
+   /* position: relative; */
+   align-items: center;
+   padding: 10px;
+   /* margin-right: 50px; */
+
+}
+
+.form-container>input{
+    background-color: rgb(245, 248, 248);
+    width: 200px;
+   border-radius: 5px;
+   border: none;
+   /* border-color: blue; */
+/* height: 30px; */
+
+
+padding: 6px;
+cursor: pointer;
+
+
+
+}
+
+.facebook-container{
+    flex: 1;
+    padding: 30px;
+}
+
+.Login{
+    width: 215px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font
+bor
+    /* padding: 15px 30px; */
+}
+
+#forgotten-password{
+    /* text-align: center; */
+    
+}
+
+.paragraph-bottom {
+
+    justify-content: center;
+    /* align-items: center; */
+    
+
+}

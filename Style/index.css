@@ -1,0 +1,189 @@
+/* p{
+    color: blue;
+}
+
+
+#green-p{
+color: brown;
+}
+
+
+.hide{
+visibility: hide;
+}
+
+.bold{
+    font-size: large;
+}
+
+div.bold{
+    font-size: x-large;
+}
+
+.box{
+background-color: rgb(red, green, blue);
+width: 100px;
+height: auto;
+gradient    
+}
+
+div{
+    height; 100px;
+    border: 40px;
+    width; 50px;
+    
+} */
+
+
+/* div {
+  background-color: brown; 
+  width: 200px;
+  height: 100px;
+
+} */
+
+/* 
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(230, 221, 185);
+    box-shadow: 0, 0, 0px grey;
+    margin: auto;
+    
+}
+
+.parent div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 24px;
+    box-sizing: border-box;
+    margin: 6px;
+    /* position: relative; */
+}
+
+/* .parent>div{
+
+}
+
+div.fixed{
+
+} */
+
+/* 
+.child{
+    background-color: green;
+    position: relative;
+    right: 200px;
+    top: 200px;
+    bottom: 100px;
+}
+
+
+
+.child2{
+    position: sticky;
+    z-index: 0px;
+}  
+*/
+
+
+.body{
+background-color: aliceblue;
+height: 100vh;
+}
+
+.body>div{
+    width: 400px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0, 0, 4px grey;
+    margin: auto auto;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 20px;
+
+}
+
+h2+p{
+    font-size: 14px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+/* h2+p::after{
+content: "";
+border: ;
+left: 0px;
+top: 32px;
+width: 100;
+
+} */
+
+
+.name{
+    padding: 16px, 0;
+    text-align: left;
+
+}
+
+.name>input{
+    width: 45%;
+    margin: 2;
+}
+
+input[::placeholder="First name"]{
+margin-right    2%;
+}
+
+.input{
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 4px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+::placeholder{
+    font-size: 10px;
+    color: rgb(0, 0, 0.5);
+    font-weight: 600px;
+}
+
+.carl{
+    text-align: left;
+}
+
+dob>p{
+    text-align: left;
+    font-size: 12px;
+    color: rgb(0,0,0,0.8);
+    margin-bottom: 4px;
+}
+
+p>span{
+    width: 5px;
+    height: 10px;
+    color: white;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 4px;
+    font-size: 8px;
+    text-align: center;
+    background-color: rgb(0,0,0,0.4);
+
+}
+
+.carl>.input{
+    width: 32%;
+    height: 30px;
+}

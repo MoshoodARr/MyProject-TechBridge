@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-header{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.top-header{
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-header{
+    height: 50px;
+    background-color: #444;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    padding-top: 150px;
+    height: 1000px;
+}

@@ -1,0 +1,58 @@
+.container{
+    height: 100px;
+    width: 200px;
+    background-color: blueviolet;
+    /* margin: auto; */
+    /* padding: 20%; */
+    /* animation-name: example; */
+    /* animation-duration: 5s; */
+    /* animation-iteration-count: infinite; */
+    transform: (200px, 200px);
+    transition-duration: 2s;
+    /* transform: rotate(50deg); */
+    /* transition-delay: 2s; */
+    /* transition-timing-function: ease-in-out; */
+}
+/* 
+/* @keyframes example{
+    from{
+        transform: scale(0.4);
+    }
+    to{
+        transform: scale(2);
+    }
+} */
+/*  
+@keyframes example{
+    from{
+        transform: scale(2) rotate(90deg) skew(90deg);
+    }
+    50%{
+        background-color: red;
+    }
+
+    70%{
+        background-color: black burlywood;
+    }
+
+    100%{
+        transform: scale(2);
+    }
+    
+}
+
+h1{
+    font-size: 70px;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+width: 50%;
+height: 400px;
+/* transform: 2s; */
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}

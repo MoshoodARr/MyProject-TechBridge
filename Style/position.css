@@ -1,0 +1,13 @@
+
+.position{
+    background-color: rgb(178, 109, 241);
+    height: 20vh;
+    width: 20vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    text-align: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}

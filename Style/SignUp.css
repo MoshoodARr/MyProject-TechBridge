@@ -1,0 +1,165 @@
+body{
+    background-color: aliceblue;
+}
+
+.body-container{
+    background: white;
+    height: 98vh;
+    width: 63vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    /* text-align: center; */
+}
+
+hr{
+    width: 63vw;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.head-container{
+    text-align: center;
+
+}
+
+.head-container>h2{
+    margin-bottom: 0px;
+    font-size: 8;
+
+}
+
+
+.head-container>p{
+    margin-top: 5px;
+    font-size: small;
+    color: rgb(101, 98, 98);
+}
+
+
+.form-container{
+   
+    display: flex;
+    width: 60vw;
+    
+}
+
+   .input1{
+   width: 28vw;
+   height: 5vh;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+   margin-left: 2.5px;
+   margin-bottom: 20px;
+
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* background-color: rgb(255, 254, 240); */
+    /* margin-left: 10px; */
+   }
+
+   .label{
+    margin-bottom: 5px;
+    margin-left: 5px;
+   }
+
+   .birthday-container select{
+    width: 19vw;
+    height: 6vh;
+    margin-left: 2px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+   border-radius: 5px;
+
+   }
+
+   .gender-container{
+    display: flex;
+    justify-content: space-around;
+   text-align: center;
+   justify-items: center;
+   margin-bottom: 20px;
+   width: 63vw;
+   
+
+   }
+
+   .gender-container div{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 16.8vw;
+    height: 4.5vh;
+    margin-right: 22.7px;
+    padding-top: 4px;
+    
+   }
+
+.input2{
+   /* display: flex;
+   flex-direction: column;
+   margin-left: 3px; */
+   
+}
+
+.input2>input{
+    display: flex;
+   flex-direction: column;
+   margin-left: 0px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 59vw;
+    height: 5.5vh;
+}
+
+.signUp>p{
+    font-size: 14px;
+    color: rgb(101, 98, 98);
+}
+
+.signUp button{
+    font-size: medium;
+    width: 33vw;
+    height: 5.3vh;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: rgb(27, 153, 27);
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(34, 34, 163);
+    margin-bottom: 15px;
+}
+
+.question-mark{
+    background: rgb(186, 184, 184);
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    box-decoration-break: ;
+
+
+}
+
+
+    
+    
+
+  /* width: 28vw;
+   height: 4.5vh;
+   border-radius: 8px;
+   gap: 30px;
+   border: 2px solid blue;
+   align-content: center;
+
+} */

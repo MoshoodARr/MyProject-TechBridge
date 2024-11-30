@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Account Creation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .container h2 {
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .gender {
+            margin: 10px 0;
+        }
+        .gender input {
+            width: auto;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create a New Account</h2>
+        <form>
+            <!-- Name Fields -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <!-- Mobile Number or Email -->
+            <label for="email">Mobile number or email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password -->
+            <label for="password">New Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <select id="day" name="day" required>
+                <option value="">Day</option>
+                <!-- Loop over the days 1-31 -->
+                <script>
+                    for (let i = 1; i <= 31; i++) {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                </script>
+            </select>
+
+            <select id="month" name="month" required>
+                <option value="">Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <select id="year" name="year" required>
+                <option value="">Year</option>
+                <!-- Loop over years 1900-2024 -->
+                <script>
+                    for (let i = 2024; i >= 1900; i--) {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                </script>
+            </select>
+
+            <!-- Gender -->
+            <div class="gender">
+                <label>Gender</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="custom" name="gender" value="custom">
+                <label for="custom">Custom</label>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" class="submit-btn" value="Sign Up">
+        </form>
+    </div>
+
+</body>
+</html>

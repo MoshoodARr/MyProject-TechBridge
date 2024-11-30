@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div id="body">
+        
+    </div> -->
+    
+
+    <script>
+//         const people = [ 
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "electrical engineer"
+//             },
+
+
+//             {
+//             name:" raheem",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "farmer"
+//             },
+
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+
+
+//             {
+//             name:" moshood",
+//             img: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+//             occupation: "engineer"
+//             },
+// ]
+
+
+// let body = document.getElementById("body")
+// people.forEach(person => {
+// let card = document.createElement("div")
+// card.classList.add("card")
+// body.appendChild(card)
+
+// let image = document.createElement("img")
+// image.src=person.image
+// card.appendChild(image)
+
+// let name = document.createElement("h2")
+// name.textContent = person.name
+// card.appendChild(name)
+
+// let occupation = document.createElement()
+// occupation.textContent = person.occupation
+// card.appendChild(name)
+                
+// }); -->
+
+
+const req = new XMLHttpRequest()
+
+req.open("Get", "https://catfact.ninja/facts?limits=15max_length=60")
+req.send()
+console.log(req.response);
+req.responseType = "json"
+req.onload = () => console.log(req.response);
+;
+
+const getFacts = new Promise((resolve, reject)=>{
+req.open("Get", "https://catfact.ninja/facts?limits=15max_length=60")
+req.send()
+req.responseType = "json"
+req.onload = () => resolve(req.response);
+req.onerror = () => reject(req.response);
+})
+
+.then(result => result.data)
+.then(result => console.log(result).catch(error => console.log(error)
+));
+    </script>
+</body>
+</html>
