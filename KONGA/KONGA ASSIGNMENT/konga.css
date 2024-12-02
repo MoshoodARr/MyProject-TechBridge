@@ -368,11 +368,11 @@ body, html{
 /* F O O T E R */
 
 .all-footer{
-    min-height: 27rem;
+    min-height: 30rem;
     box-sizing: border-box;
     margin-top: 70px;
-    margin: 70px 0px auto;
-    padding: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     
 }
@@ -414,6 +414,7 @@ body, html{
     flex-wrap: nowrap;
     box-sizing: border-box;
     font-size: .8125rem;
+    gap: 20px;
 
 }
 
@@ -422,27 +423,31 @@ body, html{
 .first-footer-items-halfwrapper-container{
     display: flex;
     align-items: center;
-    margin-right: 2.2rem;
-    color: #b5b5b5;
+    margin-left: 0;
+    /* gap: 5px; */
+    /* color: #b5b5b5; */
     width: 50%;
     font-size: .8125rem;
     box-sizing: border-box;
+    h3{
+        color: #b5b5b5;
+        margin-top: 0px;
+        margin-bottom: 15px
+    }
+    a{
+        color: #b5b5b5;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0px; 
+    }
+
+    .first-footer-items-halfwrapper-logo:hover,h3:hover, a:hover{
+        color: #fff;
+    }
 }
 
 
-.first-footer-items-halfwrapper-inner-content:hover{
-    /* background-color: #f2f2f2; */
-    color: white;
-}
-
-
-/* .first-footer-items-halfwrapper-inner-content a:hover{
-    color: white;
-}
-
-.first-footer-link-hover:hover{
-    color: #fff;
-} */
 
 /* _42b59_1R67W for email container, phone support & whatsapp logo*/
 .first-footer-items-halfwrapper-logo{
@@ -512,75 +517,25 @@ background-color: #ed017f;
 }
 
 
-/* button { */
-    /* appearance: auto; */
-    /* font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-variant-alternates: ;
-    font-variant-position: ;
-    font-variant-emoji: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: ;
-    font-optical-sizing: ;
-    font-size-adjust: ;
-    font-kerning: ;
-    font-feature-settings: ;
-    font-variation-settings: ; */
-    /* text-rendering: auto; */
-    /* color: buttontext; */
-    /* letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: pointer;
-    box-sizing: border-box; */
-    /* background-color: buttonface; */
-    /* margin: 0em;
-    padding-block: 1px;
-    padding-inline: 6px; */
-    
-/* } */
-
 
 /* fc892_2AH9J */
 .second-footer-container{
     background-color: #0c0c0c;
     /* box-sizing: border-box; */
+    height: 21.9rem;
 } 
 
 
 .second-footer-container>div{
     margin: 0 auto;
-    width: 90rem;
+    width: auto;
     box-sizing: border-box;
 }
 
 
-/* .c73f0_2-8L_ e6e42_3BvUr */
-/* .more-options{
-    display: none;
-    box-sizing: border-box;
-} */
-
-
-/* .dbdab_1Xfu1, .dbdab_1Xfu1  
-/* .second-footer-inner-items-container a {
-    color: #b5b5b5;
-} */
-
-.second-footer-inner-items-container {
-    background-color: #0c0c0c;
-    max-height: 80%;
+.second-footer-all-inner-items-container {
+    /* background-color: #0c0c0c; */
+    /* max-height: 80%; */
     padding: 1.5625rem 1.9375rem;
 }
 
@@ -598,60 +553,49 @@ background-color: #ed017f;
 /* _5497a_2ncBN */
 .second-footer-half-wrapper{
     width: 80%;
-    margin: 0;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     color: #b5b5b5;
     font-size: .8125rem;
     box-sizing: border-box;
+    /* justify-content: space-around; */
+    gap: 40px;
 }
 
 
-/* ._5497a_2ncBN .f6762_dcTF2:first-child */
-.second-footer-half-wrapper .second-footer-inner-items-container:first-child{
-    margin-bottom: 1.25rem;
-}
 
-/* ._5497a_2ncBN .f6762_dcTF2  */
-.second-footer-half-wrapper .second-footer-inner-items-container{
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
+.second-footer-half-wrapper-inner-items-container > a {
+    font-size: 1.1999rem;
+    font-weight: 700;
     color: #979797;
-    box-sizing: border-box;
-
-}
-
-/* ._5497a_2ncBN .f6762_dcTF2  */
-.second-footer-half-wrapper .second-footer-inner-items-container ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    font-weight: 400;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-
-/* #about-konga{
-    display: flex;
     text-decoration: none;
-    font-size: .8512rem;
-} */
+}
+
+.second-footer-half-wrapper-inner-items-container > a:hover{
+    color: #fff;
+}
+
+ #list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 23px;
+    list-style: none;
+    
+    li>a{
+    text-decoration: none;
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 300;
+
+    }
+}
+
+#list-items a:hover{
+    color: #fff;
+}
+
 
 /* .a81e5_C5gKu  */
 .logo-container{
@@ -765,3 +709,34 @@ ul {
     margin: .125rem 3% .125rem .125rem;
     width: 2.625rem;
 }
+
+
+#down-line-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+    background-color: #0c0c0c;
+    justify-content: baseline;
+    padding-top: 30px;
+    /* padding-bottom: 10px; */
+
+    h4{
+        color: #9b9b9b;
+        font-weight: 300;
+        font-size: 1.175rem;
+        align-items: center;
+
+    }
+
+    div{
+        margin-bottom: 5rem;
+    }
+}
+
+.hr{
+    width: 35%;
+    border-bottom: 1px solid grey;
+    opacity: 0.3;
+    height: 12px;
+}
+
