@@ -15,6 +15,12 @@
         margin-left: 20px;
     }
     button{
+        background-color: #12c9f7;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        border: 1px solid grey;
+        border-radius: 9px;
         margin-left: 47px;
         margin-top: 70px;
         width: 200px;

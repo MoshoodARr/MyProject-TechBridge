@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - 5 Rounds</title>
+    <link rel="stylesheet" href="./rpsButton.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors - 5 Rounds</h1>
+
+        <div id="round-info">
+            Round: <span id="round">1</span> / 5
+        </div>
+
+        <div id="scoreboard">
+            Player Score: <span id="player-score">0</span> | Computer Score: <span id="computer-score">0</span>
+        </div>
+
+        <div class="choices">
+            <button onclick="playRound('rock')">Rock</button>
+            <button onclick="playRound('paper')">Paper</button>
+            <button onclick="playRound('scissors')">Scissors</button>
+        </div>
+
+        <div id="result">
+            <p id="winner"></p>
+            <button onclick="resetGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="./rpsButton.js"></script>
+</body>
+</html>
