@@ -1,11 +1,11 @@
 const button = document.getElementById('catFactBtn');
 const display = document.getElementById('catFactDisplay');
 
-button.addEventListener('click', () => {
+  button.addEventListener('click', () => {
   display.textContent = '';
-  display.style.backgroundColor = '#b5b5b5';
+  display.style.backgroundColor = '#b7b7b7';
   button.disabled = true;
-  button.textContent = 'Loading...';
+  button.textContent = 'Loading......';
 
   const req = new XMLHttpRequest();
 
